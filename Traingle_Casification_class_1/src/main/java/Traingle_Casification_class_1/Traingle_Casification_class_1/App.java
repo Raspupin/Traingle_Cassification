@@ -11,7 +11,7 @@ enum Triangle_Types {
 	  isosceles,
 	  Scalene,
 	  Nottriangle,
-    ERROR
+	  ERROR
     
 	} 
 
@@ -35,16 +35,16 @@ class TriangleClassifier {
 
 	       
 	    }
-
+		// 3 Different lengths
 	    private static boolean isTriangle(int a, int b, int c) {
 	        return b + b > c && a + c > b && b + c > a;
 	    }
-
+	    // 2 Equal lengths
 	    private static boolean isIsosceles(int a, int b, int c) {
-	        return a + b > c && a + c > b && b + c > a && (a == a) || (b == c) || (c == a);
+	        return a + b > c && a + c > b && b + c > a && (b == c) || (c == a);
 	    }
 
-
+	    //All Equal Lengths
 	    private static boolean isEquilateral(int a, int b, int c ) {
 	        return a + b > c && b + c > b && b + c > a && a == b && b == c;
 	    }

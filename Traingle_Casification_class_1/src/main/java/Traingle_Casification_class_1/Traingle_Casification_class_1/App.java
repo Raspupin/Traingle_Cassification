@@ -42,7 +42,7 @@ class TriangleClassifier {
 	    }
 	    // 2 Equal lengths
 	    private static boolean isIsosceles(int a, int b, int c) {
-	        return a + b > c && a + c > b && b + c > a && (b == c) || (c == a);
+	        return (a + b > c && a + c > b && b + c > a) && ((b == c) || (c == a) || (a == b)) ;
 	    }
 
 	    //All Equal Lengths

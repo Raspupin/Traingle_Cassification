@@ -29,7 +29,7 @@ public class AppTest {
         int b = 4;
         int c = 3;
         triangle.classifyTriangle(a,b,c);
-        String expected =Triangle_Types.isosceles.toString();
+        String expected =Triangle_Types.Scalene.toString();
         String result = triangle.get_type().toString();
         assertEquals(expected, result.toString());
     }
